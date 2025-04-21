@@ -1,0 +1,104 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Gradient Animation */
+body {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1f4037);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 10px;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* App container */
+.app-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #f0f8ff;
+}
+
+/* Input section */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-container input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-container button {
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #16a085;
+}
+
+/* Map and route display */
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#routeDetails {
+  background-color: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #f0f8ff;
+}
+
+/* Embedded map frame */
+.embed-map-container {
+  margin: 20px 0;
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
