@@ -23,5 +23,4 @@ function displayRouteDetails(route) {
     }
 
     function showNearby() {
-      alert("This feature will show nearby stations using location API in future updates.");
-    }
+      alert("This feature will show nearby stations using location API in future updates.");}
